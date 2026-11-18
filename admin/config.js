@@ -1,7 +1,7 @@
-// The Supabase project URL and anon/publishable key are designed to be public.
-// Security comes from Auth + Row Level Security policies in supabase-schema.sql.
-// NEVER place a service_role key or other secret in this file.
+// Public frontend configuration for The Data Lens.
+// Supabase publishable keys are intended for browser use.
+// Never put a service_role key or database password in this file.
 window.DATA_LENS_CONFIG = {
-  supabaseUrl: "https://YOUR-PROJECT.supabase.co",
-  supabaseAnonKey: "YOUR_SUPABASE_ANON_OR_PUBLISHABLE_KEY"
+  supabaseUrl: "https://wcybmeklwtobbjnlxobc.supabase.co",
+  supabaseAnonKey: "sb_publishable_QoLi5LgVtzcB6vyiQXmS0g_yfVj2-FR"
 };
