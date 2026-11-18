@@ -1,87 +1,36 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The Data Lens — independent, data-led research and interactive analysis across markets, politics, economy, business, geopolitics, society and the environment.">
-  <meta name="theme-color" content="#101827">
-  <title>The Data Lens — Research & Intelligence</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
-  <div class="announcement"><span class="pulse"></span> INDEPENDENT RESEARCH • INDIA & THE WORLD <span class="announcement-right">DATA FIRST. CONTEXT ALWAYS.</span></div>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="The Data Lens home">
-      <span class="brand-mark">DL<span>·</span></span>
-      <span class="brand-copy"><strong>THE DATA LENS</strong><small>RESEARCH & INTELLIGENCE</small></span>
-    </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <nav id="mainNav" class="main-nav">
-      <a href="#markets">Markets</a><a href="#politics">Politics</a><a href="#economy">Economy</a><a href="#world">World</a><a href="#environment">Environment</a><a href="#dashboards">Dashboards</a>
-    </nav>
-    <a class="header-cta" href="#about">About the project <span>↗</span></a><a class="header-cta" href="admin/">Admin ↗</a>
-  </header>
-
-  <main id="home">
-    <section class="hero shell">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-line"></span> SEE THE STORY BEHIND THE STATISTICS</div>
-        <h1>The world makes<br><em>more sense</em> in numbers.</h1>
-        <p class="hero-intro">Research, explainers and interactive dashboards that turn complex developments into clear evidence — across India and the world.</p>
-        <div class="hero-actions"><a class="button button-dark" href="#dashboards">Explore dashboards <span>↘</span></a><a class="text-link" href="#topics">Explore research <span>→</span></a></div>
-        <div class="hero-note"><span class="note-dot"></span> Evidence-led analysis. Sources shown. Opinions separated from facts.</div>
-      </div>
-      <div class="hero-art" aria-label="Abstract data visualisation">
-        <div class="art-top"><span>THE BIG PICTURE / 001</span><span>INDIA ↔ WORLD</span></div>
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
-        <div class="art-core"><span>DATA</span><strong>→</strong><span>INSIGHT</span></div>
-        <div class="art-bars"><i style="--h:24%"></i><i style="--h:42%"></i><i style="--h:35%"></i><i style="--h:61%"></i><i style="--h:48%"></i><i style="--h:78%"></i><i style="--h:66%"></i><i style="--h:92%"></i><i style="--h:73%"></i><i style="--h:100%"></i><i style="--h:84%"></i><i style="--h:68%"></i></div>
-        <div class="art-caption">SIGNALS · TRENDS · CONTEXT</div>
-      </div>
-    </section>
-
-    <section class="ticker" aria-label="Coverage areas"><div class="ticker-track"><span>MARKETS & CAPITAL</span><b>✳</b><span>POLITICS & POLICY</span><b>✳</b><span>ECONOMY & BANKING</span><b>✳</b><span>CLIMATE & NATURE</span><b>✳</b><span>GEOPOLITICS</span><b>✳</b><span>BUSINESS & SOCIETY</span><b>✳</b></div></section>
-
-    <section class="section shell" id="topics">
-      <div class="section-heading"><div><div class="eyebrow">01 / RESEARCH UNIVERSE</div><h2>One world. <em>Many lenses.</em></h2></div><p>Explore the forces shaping markets, governments, economies, people and the planet.</p></div>
-      <div class="topic-grid">
-        <a class="topic-card topic-market" id="markets" href="#dashboards"><span class="topic-number">01 / FINANCE</span><span class="topic-icon">↗</span><h3>Markets &<br>Investments</h3><p>Indices, companies, sectors, capital flows and market structure.</p><span class="card-link">Explore market research ↗</span></a>
-        <a class="topic-card topic-politics" id="politics" href="#dashboards"><span class="topic-number">02 / GOVERNANCE</span><span class="topic-icon">▤</span><h3>Politics &<br>Governance</h3><p>Elections, representation, public policy and institutional performance.</p><span class="card-link">Explore political data ↗</span></a>
-        <a class="topic-card topic-economy" id="economy" href="#dashboards"><span class="topic-number">03 / MACRO</span><span class="topic-icon">⌁</span><h3>Economy &<br>Banking</h3><p>Growth, inflation, employment, public finance and financial stability.</p><span class="card-link">Explore economic data ↗</span></a>
-        <a class="topic-card topic-world" id="world" href="#dashboards"><span class="topic-number">04 / GLOBAL</span><span class="topic-icon">◎</span><h3>World Affairs &<br>Geopolitics</h3><p>Trade, diplomacy, strategic shifts and country comparisons.</p><span class="card-link">Explore global research ↗</span></a>
-        <a class="topic-card topic-nature" id="environment" href="#dashboards"><span class="topic-number">05 / PLANET</span><span class="topic-icon">⌘</span><h3>Environment &<br>Nature</h3><p>Climate, biodiversity, air, water, energy and natural resources.</p><span class="card-link">Explore environmental data ↗</span></a>
-        <a class="topic-card topic-society" id="society" href="#dashboards"><span class="topic-number">06 / PEOPLE</span><span class="topic-icon">◌</span><h3>Business &<br>Society</h3><p>Industries, demographics, education, health and development.</p><span class="card-link">Explore social indicators ↗</span></a>
-      </div>
-    </section>
-
-    <section class="feature-band">
-      <div class="shell feature-inner"><div><div class="eyebrow eyebrow-light">02 / THE DATA DESK</div><h2>Less noise.<br><em>More signal.</em></h2><p>Every research piece should make three things clear: what happened, what the data says, and why it matters.</p><a class="button button-light" href="#methodology">Our research approach <span>↗</span></a></div><div class="principles"><div><span>01</span><strong>Evidence before opinion</strong><small>Use primary sources and transparent calculations.</small></div><div><span>02</span><strong>Context over headlines</strong><small>Compare trends across time, regions and peers.</small></div><div><span>03</span><strong>Clarity over complexity</strong><small>Make the findings understandable and useful.</small></div></div></div>
-    </section>
-
-    <section class="section shell dashboard-section" id="dashboards">
-      <div class="section-heading"><div><div class="eyebrow">03 / INTERACTIVE DATA CENTRE</div><h2>Explore the <em>numbers.</em></h2></div><p>Interactive research projects, visual explainers and downloadable datasets — organised in one place.</p></div>
-      <div class="dashboard-feature">
-        <div class="dashboard-preview">
-          <div class="preview-header"><span>THE DATA LENS / SAMPLE VIEW</span><span class="preview-status">DESIGN PREVIEW</span></div>
-          <div class="preview-metrics"><div><small>INDICATOR A</small><strong>—</strong><span>Awaiting verified data</span></div><div><small>INDICATOR B</small><strong>—</strong><span>Awaiting verified data</span></div><div><small>INDICATOR C</small><strong>—</strong><span>Awaiting verified data</span></div></div>
-          <div class="chart-wrap"><canvas id="sampleChart" aria-label="Illustrative chart layout"></canvas></div>
-          <div class="preview-foot">SAMPLE LAYOUT ONLY · NO LIVE MARKET OR ECONOMIC VALUES</div>
-        </div>
-        <div class="dashboard-copy"><div class="eyebrow">FEATURED WORKSPACE</div><h3>Research built to be explored.</h3><p>Each dashboard will combine key indicators, time-series charts, comparisons, methodology and direct source links. Filters will let readers investigate the data themselves.</p><ul><li>Historical trends and comparisons</li><li>State, country and sector filters</li><li>Sources, definitions and methodology</li><li>Downloadable reports and datasets</li></ul><a class="text-link" href="mailto:your-email@example.com?subject=The%20Data%20Lens%20research">Suggest a research topic ↗</a></div>
-      </div>
-      <div class="project-strip"><div><span class="project-tag">FIRST RESEARCH PROJECT</span><h3>Lok Sabha Delimitation & Representation</h3><p>A dedicated space for the existing state and Union Territory analysis dashboard. The original dashboard file will be added in the next publishing step.</p></div><span class="coming-soon">INTEGRATION PLANNED</span></div>
-    </section>
-
-    <section class="numbers-band" id="methodology"><div class="shell numbers-inner"><div><div class="eyebrow eyebrow-light">04 / TRUST & TRANSPARENCY</div><h2>Numbers need<br><em>provenance.</em></h2></div><div class="trust-points"><div><strong>Source-linked</strong><span>Every important claim should point to its source.</span></div><div><strong>Time-stamped</strong><span>Show the period covered and the last updated date.</span></div><div><strong>Reproducible</strong><span>Explain definitions, assumptions and calculations.</span></div><div><strong>Clearly labelled</strong><span>Separate official data, estimates and interpretation.</span></div></div></div></section>
-
-    <section class="section shell about-section" id="about"><div class="about-mark">DL<span>·</span></div><div class="about-copy"><div class="eyebrow">05 / ABOUT THE PROJECT</div><h2>Curiosity, backed<br>by <em>evidence.</em></h2><p>The Data Lens is an independent research and visualisation project focused on making complex public information easier to understand. Its coverage spans India and the wider world — from financial markets and public policy to the economy, geopolitics and the natural environment.</p><p class="disclaimer">The site is an informational research publication, not investment advice or a substitute for official records. Data may be revised by its original publisher; always consult the cited source for decisions.</p></div></section>
-  </main>
-
-  <footer class="site-footer"><div class="shell footer-inner"><a class="brand brand-footer" href="#home"><span class="brand-mark">DL<span>·</span></span><span class="brand-copy"><strong>THE DATA LENS</strong><small>RESEARCH & INTELLIGENCE</small></span></a><div class="footer-links"><a href="#topics">Research areas</a><a href="#dashboards">Dashboards</a><a href="#methodology">Methodology</a><a href="mailto:your-email@example.com">Contact</a></div><span class="copyright">© <span id="year"></span> THE DATA LENS</span></div></footer>
-  <script src="app.js"></script>
-</body>
-</html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="The Data Lens — global and India-focused research, articles, reports and interactive data analysis across markets, politics, economy and the natural world.">
+<meta name="theme-color" content="#14231f"><title>The Data Lens — Research, Reports & Data</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body>
+<div class="announcement"><span class="pulse"></span> INDEPENDENT RESEARCH · GLOBAL + INDIA <span class="announcement-right">DATA FIRST. CONTEXT ALWAYS.</span></div>
+<header class="site-header" id="home">
+<a class="brand" href="#home" aria-label="The Data Lens home"><span class="brand-mark">DL<span>·</span></span><span class="brand-copy"><strong>THE DATA LENS</strong><small>GLOBAL RESEARCH & ANALYTICS</small></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+<nav id="mainNav" class="main-nav"><a href="#recent-articles">Articles</a><a href="#trending-reports">Reports</a><a href="#research-areas">Research areas</a><a href="#about">About</a></nav>
+<a class="header-cta" href="admin/">Admin ↗</a></header>
+<main class="home-shell">
+<div class="home-grid">
+<div class="home-main">
+<section class="home-section" id="recent-articles"><div class="home-section-head"><div><div class="eyebrow">LATEST THINKING</div><h1>Recent <em>articles</em></h1><p>Fresh analysis, explainers and research from India and around the world.</p></div><a class="section-link" href="articles/">All articles ↗</a></div>
+<div class="content-cards">
+<a class="content-card article-placeholder" href="articles/"><span class="content-kicker">MARKETS & INVESTMENTS · GLOBAL</span><h2>Research and analysis will appear here</h2><p>Explore evidence-led perspectives on markets, companies, capital and financial trends.</p><span class="card-meta">ARTICLE LIBRARY <b>↗</b></span></a>
+<a class="content-card article-placeholder" href="articles/"><span class="content-kicker">POLITICS & GOVERNANCE · INDIA</span><h2>Understand the numbers behind public policy</h2><p>Explore elections, representation, institutions and government performance through data.</p><span class="card-meta">ARTICLE LIBRARY <b>↗</b></span></a>
+<a class="content-card article-placeholder" href="articles/"><span class="content-kicker">ECONOMY & BANKING · GLOBAL + INDIA</span><h2>Economic signals, explained with context</h2><p>Track growth, inflation, employment, banking and the indicators shaping economies.</p><span class="card-meta">ARTICLE LIBRARY <b>↗</b></span></a>
+</div></section>
+<section class="home-section trending-section" id="trending-reports"><div class="home-section-head"><div><div class="eyebrow">DATA & DEEP DIVES</div><h2>Trending <em>reports</em></h2><p>Research reports, visual explainers and interactive dashboards.</p></div><a class="section-link" href="reports/">All reports ↗</a></div>
+<div class="report-list">
+<a class="report-row" href="reports/"><span class="report-number">01</span><span class="report-copy"><b>Lok Sabha Delimitation & Representation</b><small>Politics · India · Interactive research dashboard</small></span><span class="report-arrow">↗</span></a>
+<a class="report-row" href="reports/"><span class="report-number">02</span><span class="report-copy"><b>Global markets and economic indicators</b><small>Markets · Global · Comparative analysis</small></span><span class="report-arrow">↗</span></a>
+<a class="report-row" href="reports/"><span class="report-number">03</span><span class="report-copy"><b>Environment, climate and natural resources</b><small>Environment · Global + India · Data report</small></span><span class="report-arrow">↗</span></a>
+</div></section>
+<section class="topics-mini" id="research-areas"><div class="eyebrow">OUR COVERAGE</div><h2>One world. <em>Many lenses.</em></h2><div class="topic-pills"><a href="articles/?category=markets">Markets & investments</a><a href="articles/?category=politics">Politics & governance</a><a href="articles/?category=economy">Economy & banking</a><a href="articles/?category=world">World affairs</a><a href="articles/?category=environment">Environment & nature</a><a href="articles/?category=business">Business & society</a></div></section>
+</div>
+<aside class="home-sidebar"><div class="side-menu"><div class="eyebrow">EXPLORE THE DATA LENS</div><a href="articles/"><span>Articles</span><b>↗</b></a><a href="reports/"><span>Reports</span><b>↗</b></a><a href="dashboards/"><span>Dashboards</span><b>↗</b></a><a href="data/"><span>Data library</span><b>↗</b></a></div><div class="side-note"><span class="side-note-mark">DL<span>·</span></span><b>Evidence before opinion.</b><p>We make data easier to explore by showing sources, context, methodology and the limits of each analysis.</p><a href="#about">Our approach ↗</a></div><div class="side-update"><div class="eyebrow">GLOBAL + INDIA</div><p>Markets · Politics · Economy · Nature</p><small>Research-led. Source-linked. Clearly labelled.</small></div></aside>
+</div></main>
+<section class="about-strip" id="about"><div class="about-inner"><div><div class="eyebrow">ABOUT THE PROJECT</div><h2>Clarity through <em>evidence.</em></h2></div><p>The Data Lens is an independent research and analytics publication covering global and Indian developments through numbers, visualisations and careful context. It is an informational resource, not investment advice.</p></div></section>
+<footer class="site-footer"><div class="footer-main"><a class="brand brand-footer" href="#home"><span class="brand-mark">DL<span>·</span></span><span class="brand-copy"><strong>THE DATA LENS</strong><small>GLOBAL RESEARCH & ANALYTICS</small></span></a><div class="footer-column"><b>ABOUT</b><a href="#about">About us</a><a href="#about">Using our work</a><a href="#about">FAQs</a></div><div class="footer-column"><b>EXPLORE</b><a href="articles/">Articles</a><a href="reports/">Reports</a><a href="dashboards/">Dashboards</a></div><div class="footer-column"><b>FOLLOW & CONNECT</b><a href="https://x.com/" target="_blank" rel="noopener">X / Twitter ↗</a><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> THE DATA LENS</span><span>Terms · Privacy · Contact</span><span>DATA FIRST. CONTEXT ALWAYS.</span></div></footer>
+<script src="app.js"></script></body></html>
